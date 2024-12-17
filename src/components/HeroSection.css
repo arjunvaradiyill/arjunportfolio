@@ -1,17 +1,17 @@
-/* HeroSection.css */
 .hero-section {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 10%;
-    background-color: #000; /* Black background */
-    color: #fff;
+    height: auto;
+    padding: 5% 10%;
+    background-color: #f9f9fc;
   }
   
   .hero-content {
     max-width: 600px;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 30px;
   }
   
   .hero-content h5 {
@@ -21,44 +21,29 @@
   }
   
   .hero-content h1 {
-    font-size: 3.5rem;
-    margin: 20px 0;
-  }
-  
-  .highlight-text {
-    color: #d11a1a;
-    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 10px 0;
   }
   
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 20px 0;
     line-height: 1.6;
   }
   
   .hero-buttons {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
-  }
-  
-  .social-icons a {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: #d11a1a; /* Red hover effect */
   }
   
   .cv-button {
     background-color: #d11a1a;
     color: #fff;
     border: none;
-    padding: 12px 30px;
+    padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 4px;
@@ -69,35 +54,82 @@
     background-color: #a11717;
   }
   
-  .hero-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 50%;
+  .social-icons {
+    display: flex;
+    gap: 15px;
   }
   
-  /* Mobile responsiveness */
+  .social-icons a {
+    color: black;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #d11a1a;
+  }
+  
+  .hero-image {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Styling */
   @media (max-width: 768px) {
     .hero-section {
       flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-  
-    .hero-content {
       text-align: center;
     }
   
     .hero-content h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   
-    .cv-button {
-      padding: 10px 20px;
+    .hero-content p {
+      font-size: 0.9rem;
     }
   
     .hero-image img {
-      max-width: 250px;
+      width: 250px;
+    }
+  
+    .cv-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .social-icons a {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.8rem;
+    }
+  
+    .hero-image img {
+      width: 200px;
+    }
+  
+    .cv-button {
+      padding: 6px 14px;
+      font-size: 0.8rem;
+    }
+  
+    .social-icons a {
+      font-size: 1.2rem;
     }
   }
   
