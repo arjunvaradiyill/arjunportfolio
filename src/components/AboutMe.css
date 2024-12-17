@@ -1,0 +1,82 @@
+/* AboutMe.css */
+.about-me-section {
+    padding: 40px 10%;
+    background-color: #000000;
+    color: white;
+}
+
+.about-me-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-me-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-me-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.education-title, .experience-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #d11a1a; /* Red */
+}
+
+.education-container, .experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.education-card, .experience-card {
+    background-color: #1f1f1f;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.education-duration, .experience-duration {
+    font-weight: bold;
+    color: #ffcc00; /* Yellow */
+}
+
+.education-grade, .experience-description {
+    font-size: 1rem;
+    color: #dcdcdc;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .about-me-section {
+        padding: 40px 5%;
+    }
+
+    .about-me-title {
+        font-size: 1.5rem;
+    }
+
+    .about-me-description {
+        font-size: 0.9rem;
+    }
+
+    .education-card, .experience-card {
+        width: 90%; /* Ensure cards are responsive */
+    }
+}

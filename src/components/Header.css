@@ -1,0 +1,78 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%; /* Reduced padding to ensure better spacing on smaller screens */
+    background-color: #000; /* Black background */
+    border-bottom: 1px solid #d11a1a; /* Red border */
+}
+
+.header-left {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .nav-button {
+    background-color: transparent;
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.header-right .nav-button:hover {
+    color: #d11a1a; /* Red text on hover */
+}
+
+.header.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.toggle-button {
+    background-color: #d11a1a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #a11717;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header-left {
+        margin-bottom: 10px;
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-right .nav-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
